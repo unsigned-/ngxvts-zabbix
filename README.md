@@ -27,26 +27,26 @@ Get nginx status(eg. http status code, respone time, traffic) from vozlt/nginx-m
 ```
 3. **connections(connections)**
 ```Java
-   eg. curl http://localhost/api/connections/active or curl http://localhost/api/connections/active?cache=true
-   eg. curl http://localhost/api/connections/reading or curl http://localhost/api/connections/reading?cache=true
-   eg. curl http://localhost/api/connections/writing or curl http://localhost/api/connections/writing?cache=true
-   eg. curl http://localhost/api/connections/waiting or curl http://localhost/api/connections/waiting?cache=true
-   eg. curl http://localhost/api/connections/accepted or curl http://localhost/api/connections/accepted?cache=true
-   eg. curl http://localhost/api/connections/handled or curl http://localhost/api/connections/handled?cache=true
-   eg. curl http://localhost/api/connections/requests or curl http://localhost/api/connections/requests?cache=true
+   eg. curl http://localhost/api/v1/connections/active or curl http://localhost/api/v1/connections/active?cache=true
+   eg. curl http://localhost/api/v1/connections/reading or curl http://localhost/api/v1/connections/reading?cache=true
+   eg. curl http://localhost/api/v1/connections/writing or curl http://localhost/api/v1/connections/writing?cache=true
+   eg. curl http://localhost/api/v1/connections/waiting or curl http://localhost/api/v1/connections/waiting?cache=true
+   eg. curl http://localhost/api/v1/connections/accepted or curl http://localhost/api/v1/connections/accepted?cache=true
+   eg. curl http://localhost/api/v1/connections/handled or curl http://localhost/api/v1/connections/handled?cache=true
+   eg. curl http://localhost/api/v1/connections/requests or curl http://localhost/api/v1/connections/requests?cache=true
 ```
 3. **serverzones(serverZones)**
 
    *:vhost replace with your real vhost name*
 ```Java
-   eg. curl http://localhost/api/serverzones/:vhost/requestcounter or curl http://localhost/api/serverzones/:vhost/requestcounter?cache=true
-   eg. curl http://localhost/api/serverzones/:vhost/inbytes or curl http://localhost/api/serverzones/:vhost/inbytes?cache=true
-   eg. curl http://localhost/api/serverzones/:vhost/outbytes or curl http://localhost/api/serverzones/:vhost/outbytes?cache=true
-   eg. curl http://localhost/api/serverzones/:vhost/responses1xx or curl http://localhost/status/api/serverzones/:vhost/responses1xx?cache=true
-   eg. curl http://localhost/api/serverzones/:vhost/responses2xx or curl http://localhost/api/serverzones/:vhost/responses2xx?cache=true
-   eg. curl http://localhost/api/serverzones/:vhost/responses3xx or curl http://localhost/api/serverzones/:vhost/responses3xx?cache=true
-   eg. curl http://localhost/api/serverzones/:vhost/responses4xx or curl http://localhost/api/serverzones/:vhost/responses4xx?cache=true
-   eg. curl http://localhost/api/serverzones/:vhost/responses5xx or curl http://localhost/api/serverzones/:vhost/responses5xx?cache=true
-   eg. curl http://localhost/api/serverzones/:vhost/requestmsec or curl http://localhost/api/serverzones/:vhost/requestmsec?cache=true
-   eg. curl http://localhost/api/serverzones/:vhost/maxrequestmsec or curl http://localhost/api/serverzones/:vhost/maxrequestmsec?cache=true
+   eg. curl http://localhost/api/v1/serverzones/:vhost/requestcounter or curl http://localhost/api/v1/serverzones/:vhost/requestcounter?cache=true
+   eg. curl http://localhost/api/v1/serverzones/:vhost/inbytes or curl http://localhost/api/v1/serverzones/:vhost/inbytes?cache=true
+   eg. curl http://localhost/api/v1/serverzones/:vhost/outbytes or curl http://localhost/api/v1/serverzones/:vhost/outbytes?cache=true
+   eg. curl http://localhost/api/v1/serverzones/:vhost/responses1xx or curl http://localhost/status/api/v1/serverzones/:vhost/responses1xx?cache=true
+   eg. curl http://localhost/api/v1/serverzones/:vhost/responses2xx or curl http://localhost/api/v1/serverzones/:vhost/responses2xx?cache=true
+   eg. curl http://localhost/api/v1/serverzones/:vhost/responses3xx or curl http://localhost/api/v1/serverzones/:vhost/responses3xx?cache=true
+   eg. curl http://localhost/api/v1/serverzones/:vhost/responses4xx or curl http://localhost/api/v1/serverzones/:vhost/responses4xx?cache=true
+   eg. curl http://localhost/api/v1/serverzones/:vhost/responses5xx or curl http://localhost/api/v1/serverzones/:vhost/responses5xx?cache=true
+   eg. curl http://localhost/api/v1/serverzones/:vhost/requestmsec or curl http://localhost/api/v1/serverzones/:vhost/requestmsec?cache=true
+   eg. curl http://localhost/api/v1/serverzones/:vhost/maxrequestmsec or curl http://localhost/api/v1/serverzones/:vhost/maxrequestmsec?cache=true
 ```
