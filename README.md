@@ -9,7 +9,7 @@ Get nginx status(eg. http status code, respone time, traffic) from vozlt/nginx-m
 
 ## How to use
 ### setup nginx-module-vts
-    see also [nginx-module-vts install](https://github.com/vozlt/nginx-module-vts#installation)
+* [nginx-module-vts-install](https://github.com/vozlt/nginx-module-vts#installation)
 
 
 ### run ngxvts-zabbix
