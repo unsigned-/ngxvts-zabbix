@@ -12,6 +12,5 @@ type SysinfoController struct {
 
 func (c *SysinfoController) TimeStampMSec() {
 	useCache := true
-	c.Ctx.Input.Bind(&useCache, "cache")
 	c.Ctx.Output.Body([]byte(fmt.Sprintf("%d", models.TimeStampMSec(useCache))))
 }

@@ -10,9 +10,10 @@ type ServerZonesController struct {
 	beego.Controller
 }
 
-func (c *ServerZonesController) RequestCounter(vhost string) {
+func (c *ServerZonesController) RequestCounter() {
 	useCache := true
 	c.Ctx.Input.Bind(&useCache, "cache")
+	vhost := c.Ctx.Input.Param(":vhost")
 	val := models.RequestCounter(vhost, useCache)
 	resp := ""
 	if val != nil {
@@ -21,9 +22,10 @@ func (c *ServerZonesController) RequestCounter(vhost string) {
 	c.Ctx.Output.Body([]byte(resp))
 }
 
-func (c *ServerZonesController) InBytes(vhost string) {
+func (c *ServerZonesController) InBytes() {
 	useCache := true
 	c.Ctx.Input.Bind(&useCache, "cache")
+	vhost := c.Ctx.Input.Param(":vhost")
 	val := models.InBytes(vhost, useCache)
 	resp := ""
 	if val != nil {
@@ -32,9 +34,10 @@ func (c *ServerZonesController) InBytes(vhost string) {
 	c.Ctx.Output.Body([]byte(resp))
 }
 
-func (c *ServerZonesController) OutBytes(vhost string) {
+func (c *ServerZonesController) OutBytes() {
 	useCache := true
 	c.Ctx.Input.Bind(&useCache, "cache")
+	vhost := c.Ctx.Input.Param(":vhost")
 	val := models.OutBytes(vhost, useCache)
 	resp := ""
 	if val != nil {
@@ -43,9 +46,10 @@ func (c *ServerZonesController) OutBytes(vhost string) {
 	c.Ctx.Output.Body([]byte(resp))
 }
 
-func (c *ServerZonesController) Responses1xx(vhost string) {
+func (c *ServerZonesController) Responses1xx() {
 	useCache := true
 	c.Ctx.Input.Bind(&useCache, "cache")
+	vhost := c.Ctx.Input.Param(":vhost")
 	val := models.Responses1xx(vhost, useCache)
 	resp := ""
 	if val != nil {
@@ -54,9 +58,10 @@ func (c *ServerZonesController) Responses1xx(vhost string) {
 	c.Ctx.Output.Body([]byte(resp))
 }
 
-func (c *ServerZonesController) Responses2xx(vhost string) {
+func (c *ServerZonesController) Responses2xx() {
 	useCache := true
 	c.Ctx.Input.Bind(&useCache, "cache")
+	vhost := c.Ctx.Input.Param(":vhost")
 	val := models.Responses2xx(vhost, useCache)
 	resp := ""
 	if val != nil {
@@ -65,9 +70,10 @@ func (c *ServerZonesController) Responses2xx(vhost string) {
 	c.Ctx.Output.Body([]byte(resp))
 }
 
-func (c *ServerZonesController) Responses3xx(vhost string) {
+func (c *ServerZonesController) Responses3xx() {
 	useCache := true
 	c.Ctx.Input.Bind(&useCache, "cache")
+	vhost := c.Ctx.Input.Param(":vhost")
 	val := models.Responses3xx(vhost, useCache)
 	resp := ""
 	if val != nil {
@@ -76,9 +82,10 @@ func (c *ServerZonesController) Responses3xx(vhost string) {
 	c.Ctx.Output.Body([]byte(resp))
 }
 
-func (c *ServerZonesController) Responses4xx(vhost string) {
+func (c *ServerZonesController) Responses4xx() {
 	useCache := true
 	c.Ctx.Input.Bind(&useCache, "cache")
+	vhost := c.Ctx.Input.Param(":vhost")
 	val := models.Responses4xx(vhost, useCache)
 	resp := ""
 	if val != nil {
@@ -87,9 +94,10 @@ func (c *ServerZonesController) Responses4xx(vhost string) {
 	c.Ctx.Output.Body([]byte(resp))
 }
 
-func (c *ServerZonesController) Responses5xx(vhost string) {
+func (c *ServerZonesController) Responses5xx() {
 	useCache := true
 	c.Ctx.Input.Bind(&useCache, "cache")
+	vhost := c.Ctx.Input.Param(":vhost")
 	val := models.Responses5xx(vhost, useCache)
 	resp := ""
 	if val != nil {
@@ -98,9 +106,10 @@ func (c *ServerZonesController) Responses5xx(vhost string) {
 	c.Ctx.Output.Body([]byte(resp))
 }
 
-func (c *ServerZonesController) RequestMsec(vhost string) {
+func (c *ServerZonesController) RequestMsec() {
 	useCache := true
 	c.Ctx.Input.Bind(&useCache, "cache")
+	vhost := c.Ctx.Input.Param(":vhost")
 	val := models.RequestMsec(vhost, useCache)
 	resp := ""
 	if val != nil {
@@ -109,9 +118,10 @@ func (c *ServerZonesController) RequestMsec(vhost string) {
 	c.Ctx.Output.Body([]byte(resp))
 }
 
-func (c *ServerZonesController) MaxRequestMsec(vhost string) {
+func (c *ServerZonesController) MaxRequestMsec() {
 	useCache := true
 	c.Ctx.Input.Bind(&useCache, "cache")
+	vhost := c.Ctx.Input.Param(":vhost")
 	val := models.MaxRequestMsec(vhost, useCache)
 	resp := ""
 	if val != nil {

@@ -53,7 +53,7 @@ func DiscoeryNginxServerName() (string, []string) {
 			break
 		}
 		s := strings.TrimLeft(string(line)," ")
-		if strings.HasPrefix(s, "server_name") && strings.HasSuffix(s, ";") {
+		if !strings.HasPrefix(s, "server_name") || !strings.HasSuffix(s, ";") {
 			continue
 		}
 		s = strings.TrimLeft(s,"server_name")
