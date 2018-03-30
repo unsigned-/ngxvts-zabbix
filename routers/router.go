@@ -54,3 +54,4 @@ func init() {
 	beego.Router("/api/v1/serverzones/:vhost/maxrequestmsec",
 		&controllers.ServerZonesController{}, "get:MaxRequestMsec")
 }
+

@@ -18,7 +18,6 @@ func Init() {
 		}
 
 		CacheSet("ngxvts.cacheenable", true, 0)
-
 		updateStatusInfoToCache()
 		go nginxStatusInfoUpdateCheck()
 	}

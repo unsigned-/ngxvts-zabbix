@@ -176,6 +176,7 @@ func nginxStatusInfoUpdateCheck() {
 			updateTime := CacheGet(config.NgxvtsKeyAllStatusInfoUpdateTime(), time.Now())
 			futureTime := updateTime.Content.(time.Time).Add(cacheTime)
 			now := time.Now()
+			
 			if futureTime.Sub(now) < left {
 				updateStatusInfoToCache()
 			}
