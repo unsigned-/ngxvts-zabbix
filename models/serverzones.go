@@ -106,7 +106,6 @@ func MaxRequestMsec(vhost string, useCache bool) interface{} {
 	if content == nil {
 		return nil
 	}
-
 	arr := content.(Server).RequestMsecs.Msecs
 	if len(arr) == 0 {
 		return nil
@@ -115,3 +114,4 @@ func MaxRequestMsec(vhost string, useCache bool) interface{} {
 	utils.Float64s(arr)
 	return arr[len(arr) - 1]
 }
+

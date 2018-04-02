@@ -108,6 +108,7 @@ func CacheSet(key string, val interface{}, timeout time.Duration) (error, bool) 
 func ngxvtsCacheSet(key string, val interface{}, timeout time.Duration) (error, bool) {
 	if ngxvtsCache != nil {
 		return ngxvtsCache.(cache.Cache).Put(key, val, timeout), true
+
 	}
 	return nil, false
 }

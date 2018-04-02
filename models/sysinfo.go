@@ -28,3 +28,4 @@ func TimeStampMSec(useCache bool) interface{} {
 	}
 	return v.Content.(NginxVts).NowMsec
 }
+

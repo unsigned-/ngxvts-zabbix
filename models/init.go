@@ -16,10 +16,11 @@ func Init() {
 		if ngxvtsErr != nil {
 			panic(ngxvtsErr.Error())
 		}
-
 		CacheSet("ngxvts.cacheenable", true, 0)
+
 		updateStatusInfoToCache()
 		go nginxStatusInfoUpdateCheck()
 	}
 }
+
 

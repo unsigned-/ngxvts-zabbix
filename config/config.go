@@ -77,3 +77,4 @@ func NgxvtsCacheTime() time.Duration {
 	t := beego.AppConfig.DefaultInt("ngxvts.cachetimeout", 30)
 	return time.Second * time.Duration(t)
 }
+
