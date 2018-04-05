@@ -35,7 +35,7 @@ Get nginx status(eg. http status code, respone time, traffic) from vozlt/nginx-m
    eg. curl http://localhost/api/v1/connections/handled or curl http://localhost/api/v1/connections/handled?cache=true
    eg. curl http://localhost/api/v1/connections/requests or curl http://localhost/api/v1/connections/requests?cache=true
 ```
-3. **serverzones(serverZones)**
+4. **serverzones(serverZones)**
 
    *:vhost replace with your real vhost name*
 ```Java
